@@ -18,7 +18,7 @@ function onYouTubeIframeAPIReady() {
     e.appendChild(a); 
     
     var o = function (e) { 
-        t.setAttribute("src", "/API/dvd.png") 
+        t.setAttribute("src", "API/dvd.png") 
     }; 
     
     e.onclick = function () { 
