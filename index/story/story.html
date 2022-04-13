@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Couple - Powered by Morbidium</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous" defer></script>
+    <script src="https://code.createjs.com/easeljs-0.7.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js" defer></script>
+    <script src="/API/rsod.js" defer></script>
+    <link rel="stylesheet" href="/index/story.css">
+    <script src="/API/iframe_api.js" defer></script>
+    <script src="/API/yt.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="/API/mm.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <img src="/API/mm.png" height="40" alt="MORBIDMETA">
+        <div style="display:flex;margin-left:8em;">
+            <button id="CHlist">Chapters</button>
+            <button class="antiexplicit">Tidy Up</button>
+        </div>
+      </div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <button id="closebtn">&times;</button>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <button class="ch1">Chapter 1</button>
+            <button class="ch2">Chapter 2</button>
+            <button class="ch3">Chapter 3</button>
+            <button class="ch4" title="What was her name?">Chapter 4</button>
+            <button class="ch5">Chapter 5</button>
+            <button class="ch6">Chapter 6</button>
+            <button class="ch7">Chapter 7</button>
+            <button class="ch8">Chapter 8</button>
+            <button class="ch9">Chapter 9</button>
+            <button class="ch10">Chapter 10</button>
+        </div>
+  
+    </div>
+        <div id="calcOverlay"></div>
+    <main>
+        <span id="chapter" class="c1">
+            <h1>Ch. 1 - Ease</h1>
+            <p>Sometimes, I just don’t want to remember my past relationships. Something about them makes me feel like I’ve wasted time and quite frankly, that would be true in some cases. With me being a senior in high school, I’ve done very well in avoiding being involved in high school drama for the most part; however, I’ve had my moments. For example, there’s that time in freshman year when I was caught with what was supposedly a boner. Apart from that, I’ve done very well in staying out of it and just watching it from afar.</p>
+            <p>I go to a relatively small school with a small senior class. It’s not small enough where the school would collapse, but it wasn’t big compared to the rest of the schools in my city. The students in the senior class relatively know each other, maybe not personally but at the very least on a first and last name basis. Most of us have known each other since early elementary, others we met in middle school, but very little have joined during high school. It’s no matter, though; there’s a sense of community in my school, so people get more comfortable with other people here. We’re not perfect, sure, some pockets of students hate each other, but nobody’s shooting anybody, so that’s good.</p>
+            <p>I’m mainly ok with some of the students outside of the senior class, the rest of them I either don’t know or don’t like. However, there is this one student that just gets on my nerves.
+            </p>
+            <p><q class="janessa"><em>Hey</em>, Junior! How have you been?</q>, someone calls to me.</p>
+            <p>But first, allow me to introduce myself.</p>
+            <p id="s1">My name is Junior, Junior Lucio. I’m 17 years old, and I'm the one you want to talk to when you need any technical help when the school I.T. isn’t there, even if it's to help break the rules. Admittedly, my ego can get quite expanded at times, so feel free to call me a piece of shit every once in a while to calm it down.</p>
+            <p><q class="junior">I’ve been… ok,</q> I say with not a lot of interest to speak. That’s Janessa I'm talking to. We were together in 8th grade, but I ended things in sophomore year because she was getting a little too crazy.</p>
+            <p><q class="janessa">Nice! Do you wanna work on the project in Video Production together in 7th period?</q></p>
+            <p><q class="junior">No, I’ll be fine editing <em>my</em> work.</q></p>
+            <p><q class="janessa">Ugh, please? Just this <em>one</em> time?</q></p>
+            <p><q class="junior">No. I'm fine, please leave me alone, my presence is requested elsewhere, I'm not interested in talking, Janessa.</q> At this point, I'm getting a little irritated, but I'm still keeping my composure to not cause a scene. You could ask any of my friends this, but I'm really poor at keeping my composure.</p>
+            <p><q class="junior">Please, Janessa. I’m asking with sincerity that you leave me alone. I don’t want to talk. I'll see you in the 7th period.</q></p>
+            <p><q class="janessa">Ugh, <em>fine</em> I guess. Take care, love!</q></p>
+            <p><q class="junior">And don’t call me that,</q> I say under my breath as she walks away.</p>
+            <p id="s2">I’m a pretty damn good editor, arguably the best in the school. I’m not saying that it’s often, but that certainly isn’t the first time that I get questions like that on “help with editing videos”, which is basically them asking me to edit a video for them with nothing in return. Most of the members of my previous teams graduated, so I was the last member in that whole saga, but since I’m no longer in Video Production, that spark went away quite quickly in our school. Now the videos that we used to call “morning announcements” are boring as shit and painful to watch. I’d be better off living in China shouting “glory to the CCP!”</p>
+            <p id="d1">Janessa is as far away from me as possible, so I turn back around to continue walking. But in typical high school cliché fashion, I bump into someone that just so happened to be in my way as I was turning my head back around to make sure Janessa stayed away from me, and the person that I ran into just so happened to be holding a perfectly good cup of tea in their hands. Initially, I was irritated because piping hot tea got spilt on my jacket and it was seeping into my shirt by the minute, but as I was getting ready to pop off at them, I took one look at who they were and stopped. Frankly, I don’t know this person, I don’t even think I’ve seen this person around campus, but upon looking at them, I stopped what I was doing, changed my tone, and immediately apologised. <q class="junior">Damn, I’m really sorry about that, I didn’t mean to bump into you.</q></p>
+            <p><q class="anisa">No, it’s ok, I wasn’t paying attention either. Let me go get you a towel from the library,</q> she says before I stop her.</p>
+            <p><q class="junior">No, no. It’s fine. I’ll manage for the day. I insist.</q></p>
+            <p><q class="anisa">Oh. Um, alright then.</q></p>
+            <p><q class="junior">Hey, are you new here? I’ve never seen you around.</q></p>
+            <p><q class="anisa">Me? No, I’ve been here, I don’t think we’ve passed by each other a whole lot so I can see why we can’t recognize each other.</q></p>
+            <p><q class="junior">My name’s Junior. I’m a senior here.</q></p>
+            <p><q class="anisa">That’s fun. I’m Anisa, a junior.</q></p>
+            <p><q class="junior">That’s cool. You seem like a nice person, let’s talk soon?</q></p>
+            <p><q class="anisa">Sure thing, but I can’t talk right now, I’m kinda in a rush.</q></p>
+            <p><q class="junior">Yeah, I feel that. Well, do you happen to have any social media?</q></p>
+            <p>We get each other’s Snapchat usernames and I tell her not to laugh at my stupid username. <q class="junior">Alright, listen. I made it like 8 years ago and I was a young and dumb lad.</q> But of course, she still laughs and for some reason, I’m ok with that.</p>
+            <p><q class="anisa">Aw, that was funny,</q> she says while trying to catch her breath.</p>
+            <p><q class="junior">N-no it wasn’t! I was stupid to come up with that username!</q></p>
+            <p><q class="anisa">No, but I like it. It’s fun.</q></p>
+            <p><q class="junior">Huh, yeah whatever.</q></p>
+            <p>She starts chuckling. <q class="anisa">I’ll talk to you later?</q></p>
+            <p><q class="junior">Yeah, sure thing.</q></p>
+            <p><q class="anisa">Alright, bye!</q></p>
+            <p><q class="junior">See ya.</q></p>
+            <p>I kinda just stood there for a bit with a smile on my face and watched as she started speed walking away, and then I felt a presence behind me. <q class="juanpa">Who was that?</q></p>
+            <p id="f1"><q class="junior">Jesus! What the fuck were you guys sneaking behind me for?</q> Oh. Phew. It was just my friends.</p>
+            <p><q class="bread">We just got here, your face is getting red!</q></p>
+            <p><q class="junior">Shut up, Bread!</q> Oh, this will be a long day.</p>
+            <p>A very, <em>very</em> long day.</p>
+        </span>
+        <span id="chapter" class="c2">
+            <h1>Ch. 2 - T.E.B.<mark>A</mark>.</h1>
+            <p>My friends can be a bit weird at times. Wait, no, ALL the time.  The one that asked who I was talking to was Juanpa, the one who pointed out my embarrassment was Bread.  My friends Arthur and Angel were already ahead. I was going to catch up with them, but Juanpa wanted to ask me some questions first.
+            </p>
+            <p><q class="juanpa">Okay but, who was that girl you were talking to?</q> Juanpa says with curiosity.
+            </p>
+            <p><q class="junior">She’s someone from the junior class, I bumped into her trying to get rid of an ‘obstacle’.</q></p>
+            <p><q class="juanpa">She’s quite short.</q></p>
+            <p id="f2"><q class="junior">Juanpa, you call almost everyone short ‘cause you’re a big fuckin’ dude. She’s only a couple of inches shorter than I am, and I’m 5 foot, 8 inches.</q></p>
+            <p><q class="juanpa">You would be right,</q> Juanpa says with a chuckle.</p>
+            <p>I shrug it off and change the subject. <q class="junior">Anyway, Prom is coming up and this year, they’re allowing juniors to show up. Now <em>me</em>, personally, I don’t think I’m gonna show up.</q></p>
+            <p><q class="juanpa">Yeah, me neither, I don’t have anyone to take,</q> Juanpa says with disappointment.</p>
+            <p><q class="bread">Why don’t you take Sofie?</q> Bread says out of nowhere.</p>
+            <p><q class="juanpa">Are you crazy? She’d never want to go with me, we’re just friends.</q></p>
+            <p><q class="bread">It’s worth a shot.</q></p>
+            <p><q class="juanpa">Shut up, Bread.</q></p>
+            <p>We all laugh from quality banter. It goes around our friend group, so everyone gets it but it’s all in good fun. My friends and I call our friend group, “The Entire Boys Army”, or TEBA. We have a private Discord server by the same name and we mainly just play games, talk, or plan group meetups from time to time.</p>
+            <p><q class="junior">Alright, Imma head that way. I’ll talk to y’all later,</q> I say to my friends before walking in the other direction.</p>
+            <p><q class="juanpa">See ya.</q></p>
+            <p>I then walk towards where my next class is and meet my friend Antwon walking in the same direction. He’s also one of the “founding fathers” of TEBA, but he’s normally got his own thing going on.</p>
+            <p><q class="junior">Hey, mate. How’ve you been?</q> I ask him as he jumps up from being half asleep.</p>
+            <p id="f3"><q class="antwon">Pretty tired. The boss at my work got me fucked up with my weird-ass schedule.</q></p>
+            <p><q class="junior">I can tell, you got bags under your eyes.</p>
+            <p><q class="antwon">Is it really that obvious?</q></p>
+            <p><q class="junior">Yeah, you look like you haven’t slept in ages.</q></p>
+            <p id="d2"><q class="antwon">Damn, I wanna change my schedule but I’m making a lot with what I have now, and I’m afraid if I get it changed, I’ll stunt my income.</p>
+            <p><q class="junior">Yeah, just try and sleep earlier. So you can wake up earlier while still getting your hours.</q></p>
+            <p><q class="antwon">I might try that. Hey, I heard prom is coming up and they’re letting juniors in this time.</q></p>
+            <p id="s3"><q class="junior">Yeah, I have no idea why, but...</q> I was going to continue to talk shit about prom, but something crossed my mind and it suddenly changed. <q class="junior">But it sounds fun.</q></p>
+            <p><q class="antwon">I hope you’re right.</q></p>
+            <p><q class="junior">Me too.</q></p>
+        </span>
+        <span id="chapter" class="c3">
+            <h1>Ch. 3 - …</h1>
+            <p>It’s been a week since I bumped into Anisa, we’ve been talking a lot about some things and we’ve become good friends. The prom is on Saturday, which is in about 4 days, and I still don’t have anyone to go with. Chances are I probably might not go.</p>
+            <p id="s4">It gets a little frustrating for me when my family butts into something I feel should be kept away from them, especially my relationships. I don’t tell my parents anything about anyone I date because they’d say something about it. Even my extended family: if I tell them anything about me even liking a girl, they’d be everywhere in my business and either talk shit on it or just ask too many damn questions. Because yes, they’re <em>really</em> nosy.</p>
+            <p><q class="junior">Hey, Mom,</q> I say as I walk into the house and see her in the kitchen. She says hi back and asks me how school was. I normally say it was good if nothing special happened at school. <q class="mum">So, I heard there was a prom being held at your school soon.</q></p>
+            <p><q class="junior">Yeah, they’re letting juniors this time, so that should be fun. If being fun meant being chaotic.</q></p>
+            <p><q class="mum">Well, I mean, it could be they’re trying to let other students have the opportunity to have fun as well.</q></p>
+            <p><q class="junior">No way, it’s gotta be for the money. If that was the case they’d open it to everyone in the school.</q></p>
+            <p><q class="mum">I guess. Are you going to go? Who are you taking? Would I have to pick them u—</q></p>
+            <p><q class="junior">Mom, I’m not going.</q></p>
+            <p><q class="mum">Why not? I think you’ll like it!</q></p>
+            <p><q class="junior">There’s a lot of reasons why I don’t want to go to prom, Mom. If my friends go, I’ll go, but that’ll be the only reason why I’ll go.</q></p>
+            <p><q class="mum">Junior, I still don’t see why you shouldn’t go. You’re a senior, you should live the experience because you won’t get the opportunity again anytime soon.</q></p>
+            <p><q class="junior">I’m not going.</q></p>
+            <p><q class="mum">Alright, well I won’t stop you, it saves me gas. Anyways, go shower and clean up your room, your father invited some people from New Hope here for dinner.</q></p>
+            <p><q class="junior">There’s a lot of people that go to New Hope, do you happen to know their names?</q></p>
+            <p><q class="mum">I don’t remember, but I think the dad’s daughter goes to your school.</q></p>
+            <p><q class="junior">There are a lot of people that go to New Hope that also go to my school.</q></p>
+            <p><q class="mum">Look, I don’t know, your father invited them here to have dinner tonight and they should be arriving soon. Take a shower, clean up your room, and for the love of God, please be nice.</q></p>
+            <p><q class="junior">No promises.</q></p>
+            <p>I spend about 15 minutes taking a shower, and as soon as I get dressed and start cleaning my room, I hear a very faint sound of someone closing their car door from outside. I run to the monitor to check the security cameras from my room and 3 people are at the door: one adult and one teenager. <q class="junior">Wait.</q> The teenager seems to look familiar. I then realise who the teen is once she looks at the camera. <q class="junior">Oh no.</q></p>
+            <p>I start racing to clean up my room, making my bed as quick as possible, hiding anything in my closet, running to the restroom to comb my hair, and spraying so much cologne and body spray on myself that it could give someone an asthma attack.</p>
+            <p>Well, not <em>that</em> much cologne, but you get the idea.</p>
+            <p>I then run back to my desk next to the door, cleaned up the cords, grabbed any loose ones and threw them in my backpack, and then threw my backpack in my closet. I turn off my ceiling light and turn on the LED lights I have in my room and spray the room with an air freshener.</p>
+            <p>That’s when I hear the front door to the house open. My parents welcomed the guests and I heard a familiar voice from one of them. When paired with the face I saw on the cameras, I start to get extremely anxious and try to figure out what I should do before the “guests” walk through the front door, so I turn on my Apple TV which is connected to the monitor on the left from the main monitor connected to the cameras and my computer, then I sit at my desk.</p>
+            <p id="f4">I’m scrolling through my Apple TV menu, trying to find that one fucking show and my anxiety breaks a peak when I faintly hear from the kitchen, <q class="mum">down the hall, first door to the left.</q> I start getting even more nervous as I curse my mom for even THINKING about answering that too soon, let alone in the FIRST place! You couldn’t have just given me some fucking time to go out there myself?!</p>
+            <p>I hear the footsteps getting closer, things are running through my head as my heartbeat gets faster.</p>
+            <p id="f5">Step… step… step… step... They’re getting closer. What should I say? How should I act? Does my room look nice? Fuck! I can’t think! The steps get closer, and closer, and closer. Until...</p>
+            <p>they stop.</p>
+            <p>The doorknob starts rattling and I’m watching as it turns, the door opens, and…</p>
+            <p><q class="mum">Hey, what are you still doing in here? Come say hi to our guests.</q></p>
+            <p>Oh, it was just my mom. Great. Thanks for almost putting me in a coma.</p>
+            <p><q class="junior">Mom, why’d you have to scare me like that? I thought one of the guests was going to show up.</q></p>
+            <p id="f6"><q class="anisa">Oh, hi Junior!</q> the teenager says as she peeks in her head. And just as I expected, and sure as fuck didn’t want,</p>
+            <p>It's Anisa.</p>
+        </span>
+        <span id="chapter" class="c4">
+            <h1>Ch. 4 - Unexpected Visitation</h1>
+            <p id="s5"><q class="junior">Hey, <mark>Anisa</mark>. I didn’t expect you to be here,</q> I try to say with a smile on my face that’s not showing that I’m shitting bricks right now.</p>
+            <p><q class="anisa">Yeah, me neither. I-I didn’t know your dad knows my dad from church,</q> she says with a nervous chuckle.</p>
+            <p><q class="mum">You guys know each other?</q> My mom asks me, visibly confused. I can tell she’s trying to play it off like we didn’t just have this conversation about whether or not I knew who Anisa was.</p>
+            <p><q class="junior">Yeah, we know each other from school.</q></p>
+            <p><q class="mum">Oh, ok. Well, come to say hi to her dad.</q></p>
+            <p>I take a breather, oblige, and walk down the hallway with Anisa and my mom to say hi to her dad. Her dad is about as tall as I am, but he’s a pretty nice guy. He’s one of those guys where he’s so nice, you wouldn’t wanna disappoint him. Anisa also has an older sister from what I can gather, but I’ve never even seen her face. I shake hands with her dad, say hi, introduce myself to him, and have a small chat with him. After about 5 minutes of talking, my mom decides to ask me to invite Anisa to my room, but also jokingly saying not to do anything funky. I got a little embarrassed, and I could tell Anisa was too.</p>
+            <p>I take Anisa back to my room to avoid the rest of the conversation that our parents are most definitely going to have about us. It’s a small room, so there isn’t much to look at. She notices my switch on my desk just sitting in its dock and asks, <q class="anisa">you have a switch?</q></p>
+            <p><q class="junior">Yeah, I’ve had it for a while.</q></p>
+            <p><q class="anisa">Nice Joycon shells! Where’d you get them?</q></p>
+            <p><q class="junior">I got ‘em on Amazon, I switched them myself.</q></p>
+            <p><q class="anisa">That’s cool. Do you have an extra controller?</q></p>
+            <p><q class="junior">Yeah, I got one right here.</q> I handed her my brother’s controller that I took from his room after I got out of the shower, switched my TV input to HDMI2, and launched Smash on my TV.</p>
+            <p><q class="anisa">I’m a little rusty at the game, so go easy on me,</q> she says before I even choose a character. <q class="junior">Yeah, right. You’re probably fibbing so you can destroy me and save the replay,</q> I say jokingly. <q class="junior">However, because I’m nice, I’ll give you the benefit of the doubt.</q></p>
+            <p>Turns out, I was right. And I regret letting my guard down.</p>
+            <p><q class="junior">You’re kidding,</q> I say as I look at her character’s victory pose with disbelief.</p>
+            <p><q class="anisa">Yeah, I may have lied to you, <em>just</em> a little bit,</q> she says while trying to keep herself from laughing.</p>
+            <p><q class="junior">Yeah, it shows.</q></p>
+            <p>We laugh ourselves off a little bit, and when we finally get our composure, I get a bunch of snaps from someone named “Femmes de la Rue”. Oh, wait. It’s just Janessa.</p>
+            <p><q class="anisa">Who’s that?</q> Anisa asks out of curiosity. I doubt she’d be jealous about it, we’re only friends. </p>
+            <p><q class="junior">It’s someone I know named Janessa,</q> I say with a disappointing sigh. I knew in my head that saying “it’s someone I know” is giving Janessa too much credit in itself.</p>
+            <p><q class="anisa">Is she someone you’re with?</q></p>
+            <p><q class="junior">She’s someone I <em>was</em> with, but I regret meeting her with every fibre of my being.</q></p>
+            <p><q class="anisa">I see. Tell me more about her.</q></p>
+            <p id="a1">I explain to her who Janessa is and how much of a pain in my ass she is, and the more I talk about her, the more she starts to understand and more about the situation.</p>
+            <p><q class="anisa">I-I see, sorry for asking. I feel terrible now.</q></p>
+            <p><q class="junior">Don’t be, it was my fault for doing this to myself.</q></p>
+            <p><q class="anisa">So what did she send you?</q></p>
+            <p><q class="junior">I don’t know, let me check.</q></p>
+            <p>So I read a little of what she says and it goes as follows:</p>
+            <br><br>
+            <p class="janessa" style="text-indent:0;"> < Hey what’re you doing?</p>
+            <p class="junior" style="text-align:right">Nothing that concerns you, what do you want? ></p>
+            <p class="janessa" style="text-indent:0;"> < Soooooo, Prom is coming up, you wanna go with me?</p>
+            <p class="junior" style="text-align:right">You know the answer already, I ain’t gonna explain it to you again. > </p>
+            <p class="janessa" style="text-indent:0;"> < So it’s a yes??</p>
+            <p class="junior" style="text-align:right">It’s a no. I’m going, but I’m not going with you. > </p>
+            <p class="janessa" style="text-indent:0;"> < Really, huh? Who are you going with then?</p>
+            <br><br>
+            <p>As soon as I read that message calling my bluff, I knew that I made a mistake. I know if I say that I’m going with my friends, she’ll call my bluff again and then bug my friends about it and try to persuade them not to go. Anisa could tell I was a little nervous just from the deep breath I took after locking my phone. <q class="anisa">Hey, is something wrong?</q> she asks.</p>
+            <p><q class="junior">Oh, it’s nothing, it’s nothing I can’t handle.</q></p>
+            <p><q class="anisa">Well, I hope so, it seems like you’re already in some deep crap with all of this drama you’re in, so I’m just making sure you’re alright.</q></p>
+            <p><q class="junior">I appreciate your concern, but I just wanna take my mind off things. You wanna grab something at the ice cream shop? It’s not that far of a walk and I’ll be the one paying.</q></p>
+            <p><q class="anisa">Hmmm, sure. I’ll go with you.</q></p>
+            <p>So we go tell our parents that we’re going to Coldstone about a block or two away, and they agree to let us go but to not be out for long. Although pretty annoying when that rule is in place, I understand why her dad wouldn’t want to stay in this house.</p>
+            <p>I've had those moments.</p>
+            <div class="linebreak"></div>
+            <p>We get to Coldstone and my cousin Xander is on the job. As soon as he sees me walk through the door, he goes, <q class="alex">Hey, Junior! How’ve you been?</q></p>
+            <p><q class="junior">I’m doing alright, lad. How about yourself?</q></p>
+            <p><q class="alex">It’s been going good, you actually came at a good time because there was a cluster of people not too long before you showed up. Who’s this girl you brought in with you today?</q></p>
+            <p><q class="junior">Oh, this is Anisa, she’s a friend of mine.</q> I introduce them to each other and they exchange handshakes and greetings, and then we continue with our order. <q class="junior">You remember what I want, right?</q> I ask Xander.</p>
+            <p><q class="alex">Medium shake with 2 scoops of cotton candy, one scoop of ‘Icing on the Cake’?</q></p>
+            <p><q class="junior">That’s right. Thanks, lad.</q></p>
+            <p><q class="alex">No problem. And what would you like?</q> Xander asks Anisa.</p>
+            <p><q class="anisa">I’ll get what he’s having.</q></p>
+            <p><q class="alex">Alright, two medium shakes. Your total is going to be $12.43,</q> Xander says as he puts in my order on the register. I hand him the money and he gives me back my receipt.</p>
+            <p><q class="alex">Your order should be out soon!</q></p>
+            <p><q class="junior">Thanks again, lad.</q> I then started talking to Anisa about why he remembered my order. <q class="junior">I come here often, mostly right after my family and I eat at that sushi place a couple of doors down.</q></p>
+            <p><q class="anisa">Then my order won’t be hard to remember too, right?</q> she says with a chuckle.</p>
+            <p id="f7">We start laughing a little bit then we find a table to sit at. Because I can be a gentleman most of the time, I pull out Anisa’s chair for her so she can sit down. But as soon as <em>I</em> pull out <em>my</em> chair so <em>I</em> can sit down, I hear someone scream in pure anger. <q class="janessa"><strong>JUNIOR!</strong></q> I look at the door to see who was calling my name, and sure enough, out of all the people in the fucking world,</p>
+            <p><em>Janessa</em> had to be the one at the door.</p>
+        </span>
+        <span id="chapter" class="c5">
+            <h1>Ch. 5 - Hesitation</h1>
+            <p><q class="junior">Janessa? Why are you here?</q> I tell Janessa as she walks closer to me and Anisa.</p>
+            <p><q class="janessa">Who is she?</q> Janessa says with an angry tone and a matching facial expression pointing at Anisa.</p>
+            <p>Anisa becomes confused and tries to answer the question. <q class="anisa">I’m his, uh…-</q></p>
+            <p><q class="junior">Girlfriend! This is Anisa, my uh, girlfriend,</q> I say while interrupting Anisa. I turn around and she’s got a confused facial expression, but I mouth to her just to go along with it. She takes a good look at how angry Janessa looks, looks back at me, smirks, and nods her head. She stands up, locks her arm around mine, and sticks out her other hand to introduce herself to Janessa. <q class="anisa">I’m Anisa, Junior’s girlfriend.</q></p>
+            <p>Surprisingly, Janessa sticks out her hand to shake Anisa’s and introduces herself in a disgusted manner. Janessa then gives both me and Anisa a look of suspicion. <q class="janessa">Hmm, I’m not buying it.</q></p>
+            <p><q class="junior">What? What are you not getting from this?</q> I reply.</p>
+            <p><q class="janessa">I don't believe that she’s your girlfriend.</q></p>
+            <p><q class="junior">Well, you’re going to have to believe it because you’re in denial and I’m better off with Anisa rather than you,</q> I bark back. I don't even know what I said there but let's just go with it.</p>
+            <p><q class="janessa">Well then, if she’s your <em>girlfriend</em>, why don’t you prove it?</q></p>
+            <p><q class="junior">What? How am I supposed to prove it?</q> I ask with a confused face.</p>
+            <p><q class="janessa">Oh, I don’t know, maybe a little smooch wouldn’t hurt to prove your love.</q></p>
+            <p><q class="junior">What? That’s impra-</q> Just as I was about to finish my sentence, Anisa takes her hand not locked to my arm, places it on my left cheek, closes her eyes, and starts kissing me on the lips, it lasted for about 10 seconds, but it was enough to leave a shocked facial expression on Janessa’s face. We look at each other for a second, smiles building on our faces, then look back at Janessa. </p>
+            <p><q class="anisa">Does <em>that</em> prove enough?</q> Anisa says to Janessa with a raised eyebrow and a smirk on her face.</p>
+            <p><q class="janessa">I- uh… am impressed. But I’m still not convinced. If you two go to prom together, maybe <em>then</em> I’ll be convinced that you’re together,</q> Janessa says with a cunning expression.</p>
+            <p><q class="anisa">You- I just- Nevermind. Fine. We’ll go.</q></p>
+            <p><q class="alex">Hey guys, your shakes are ready!</q> Xander says, being oblivious to what just happened, but I wouldn’t blame him if it was on purpose, which most likely is the case.</p>
+            <p><q class="junior">Thanks, mate,</q> I say to Xander. Then I turn to Janessa after I grab my shake over the ice cream counter. <q class="junior">Now if you’ll excuse us, we’ll be on our way.</q> We start walking towards the exit, passing her on our way out. As I’m walking out the door, I turn around and flip her off with a smirk on my face while I’m holding the door open for Anisa. Then I turn back around and start walking with Anisa back to my house.</p>
+            <div class="linebreak"></div>
+            <p id="a2"><q class="junior">Hey, so uh, thanks for helping me out there. I’m incredibly sorry that you had to see how much of a pain in the ass she is, first-hand,</q> I tell Anisa as we’re walking down the street.</p>
+            <p><q class="anisa">You’re welcome, and it’s fine. She seems like a bitch. I got pretty annoyed with how she was acting so I shut her up for you.</q></p>
+            <p><q class="junior">I thank you for that, but now I need another favour.</q></p>
+            <p><q class="anisa">What’s that?</q></p>
+            <p><q class="junior">This might be a little difficult, but can you pretend to be my girlfriend in public <em>just</em> until after prom?</q></p>
+            <p><q class="anisa">Wait, hold up. You want me to <em>pretend</em> to be your girlfriend in public?</q></p>
+            <p><q class="junior">Yeah, just to show Janessa that I don’t love her anymore, that whatever we had in the past is in the past and I don’t want any more, it's been a problem for a while.</q></p>
+            <p>We cross the crosswalk at a light that’s not working properly and just blinks red and a car honks at us for taking forever to walk across. A lady pokes her head out of her car window and starts yelling at us. <q style="color: #67ff46;">Hey, hurry up!</q></p>
+            <p><q class="junior">You tell me to hurry up again, yeah, and your airbags will be discharged, how about that? I’m sure you and your nine kids will love explaining to your husband why the airbags are deployed, considering he hasn’t left yet.</q></p>
+            <p>The lady changes facial expressions from angry to fear and her head goes back into her car as she rolls up her window. <q class="junior">Yeah, that’s what I thought,</q> I mumble. <q class="junior">Anyways, continue.</q></p>
+            <p><q class="anisa">That seems a little much compared to just telling her that we’re together when we really aren’t together,</q> she chuckles.</p>
+            <p><q class="janessa">Yeah, but just like she said at Coldstone, she won’t believe us if I don’t physically show her we’re together. It’ll just be until prom ends, that’s when we can go back to being just friends.</q></p>
+            <p><q class="anisa">Yeah, you're right. Hmmm, fine. Starting tomorrow, I'll be your ‘girlfriend’.</q></p>
+            <p><q class="junior">Thank you so much, I really appreciate it.</q></p>
+            <p><q class="anisa">But I’d better get something back.</q></p>
+            <p><q class="junior">How about I take you to dinner at that same sushi place I was talking about and then Coldstone right after?</q></p>
+            <p><q class="anisa">Deal.</q></p>
+            <div class="linebreak"></div>
+            <p>We get back to my house and as we walk through the door, the house dogs, Hades and Abby, greet us at the door.</p>
+            <p><q style="color: #7d963b;">Hey, you’re back,</q></p>
+            <p><q class="junior">Yeah, it took a little longer than expected, it got busy.</q></p>
+            <p><q style="color: #7d963b">Well, as long as you’re back safe.</q></p>
+            <p>Anisa and I go back to my room and continue playing Smash until she leaves. She offers to pay me back for the shake, but I decline and say it’s ok.</p>
+            <p>I walk Anisa and her dad out the door and as soon as she gets in her car, she looks at me through the window while I'm standing next to the car. She rolls down her window and says, <q class="anisa">Hey, don’t forget our deal,</q> with a smile on her face.</p>
+            <p><q class="junior">Don’t worry, I won’t,</q> I say as I smile back at her.</p>
+            <p><q style="color: #7d963b">We’ll see you guys later!</q></p>
+            <p><q class="junior">Take care, lads,</q> I say, waving them goodbye.</p>
+            <p>I walk back into my house as they drive away, I go into my room and lay down on my bed, letting out a deep sigh. I start to smile a little bit.</p>
+            <p><q class="junior">This will be fun.</q></p>
+        </span>
+        <span id="chapter" class="c6">
+            <h1>Ch. 6 - This Will Be Fun, Indeed</h1>
+            <p>The next morning, Anisa and I see each other at the gates at around 7:54, approximately 6 minutes before the school bell rings for our 5th period. I see Anisa walking towards me with a thick black jacket and Adidas track pants. <q class="anisa">You aren’t cold in that?</q> she asks me with a smile.</p>
+            <p><q class="junior">Not really, I’m just wearing a black Adidas jacket and matching wind pants, I’m perfectly fine.</q></p>
+            <p><q class="anisa">I’m not!</q> she says as we both start laughing.</p>
+            <p><q class="junior">Êtes-vous prêt à être ma petite amie pour les 2 prochains jours?</q></p>
+            <p>She looks at me confused as to what I just said. <q class="anisa">Huh?</q></p>
+            <p>I chuckle a little bit. <q class="junior">It’s french. I asked you if you were ready to be my girlfriend for the week.</q></p>
+            <p>She lets out a sigh and says with a smile, <q class="anisa">let’s do it.</q></p>
+            <p><q class="junior">Después de ti.</q></p>
+            <p><q class="anisa">Tú primero,</q> she says with a smile.</p>
+            <p><q class="junior">Whatever,</q> I say back, smiling. We hold hands, start walking through the gate, and we pass by a handful of people giving us surprised looks like we were prime ministers, but we mainly just ignored them as we walked to an empty table outside in a place we call “the quad”. It’s basically the centre between all of the buildings where all of the students go during break and lunch. We sat down at the table and we watched our favourite show on my phone, <em>Hell’s Kitchen</em>. She lays her head on my shoulder as we’re watching. I could feel Anisa shivering, despite her wearing a thick jacket, so I took off mine and wrapped it around her shoulders and back and she placed her head back on my shoulder, no longer shivering. For some reason, I could feel a presence staring at me from across the quad, so I looked around to see who it might be. I didn’t find anyone staring at me, so I ignored it and continued watching the show.</p>
+            <div class="linebreak"></div>
+            <p>The bell rang so we got up from our table and grabbed our bags to head to class. She was about to take off my jacket to give it back to me but I stopped her before she could. <q class="junior">No, it’s okay. You can wear it until you feel it’s warmed up a little,</q> I say as I’m grabbing my backpack and my drawstring bag.</p>
+            <p><q class="anisa">Are you sure? It’s pretty cold out here.</q></p>
+            <p><q class="junior">It isn’t cold enough for me to necessarily wear a thick jacket, but it’s cold enough for me to complain about it.</q></p>
+            <p>She chuckles a little bit. <q class="anisa">Alright, thank you</q></p>
+            <p><q class="junior">No problem. What class do you have right now?</q></p>
+            <p><q class="anisa">I have math. What about you?</q></p>
+            <p><q class="junior">I have Biology, but it’ll be a while until the teacher opens the door. I'll make it, don’t worry about me.</q></p>
+            <p><q class="anisa">Alright, well we can go to go to math.</q> As I’m walking Anisa to her class, I begin to feel like I’m being watched or followed. I turn around, but I don’t see anyone necessarily following me specifically or looking at me funny. <q class="anisa">Is something wrong?</q> Anisa asks out of concern.</p>
+            <p><q class="junior">No, I thought someone was following us but I think it’s just me being an idiot,</q> I replied with a chuckle. I ignore it again and continue walking Anisa to her math class. We get there and I say hi to the math teacher, I’ve had him before and he’s pretty cool, so I hang out in his class for about a couple of minutes before I hug Anisa and walk out.</p>
+            <p>While I was on my way to my first period, I saw Janessa walking my way while on her phone, so I quickly turned a different way and completely avoided her. While I’m hiding behind a wall to avoid Janessa, the late bell rings. I look back to see if Janessa is still walking near me, when I don’t see her, I start running to my Biology class. Once I run through the door, my teacher, Ms Falling, sees that I have my hands on my knees, panting like a dog, completely out of breath, and asks why I’m late for class.</p>
+            <p><q class="junior">I had to talk to one of my other teachers about my grade,</q> I say in an attempt to get past getting marked as tardy. She says that’s fine and tells me to have a seat. In that class, I sit next to Antwon and my other friend, Isaiah. They see me tired and still out of breath and begin to look confused. <q class="antwon">Dawg, why are you out of breath?</q> Antwon whispers while the teacher talks to the class.</p>
+            <p><q class="junior">Well, I first had to take care of some business, then I was hiding from Janessa, the late bell rang, I ran up the stairs, around the corner, and right here where I’m sitting,</q> I whisper back.</p>
+            <p id="d3"><q class="antwon">Damn, that sucks. Where were you last night? We were waiting for you to join the Bonfire call but you never did.</q></p>
+            <p><q class="junior">Anisa and her dad came over to my house and I went to Coldstone with her.</q></p>
+            <p><q class="antwon">It shouldn’t have taken that long, surely.</q></p>
+            <p><q class="junior">Yeah, but Janessa just had to be there, so it took a lot longer than expected.</q></p>
+            <p id="f8">I start looking back on that night, and I start to remember what Anisa did to surprise Janessa. If I'm being honest, it felt amazing. However, I shouldn’t think of it too much because since we aren’t actually together, I fear that thinking about it will fuck up my thoughts and that things will start happening.</p>
+            <p><q class="antwon">What’s got you smiling?</q> Antwon asks, snapping me out of my head.</p>
+            <p>I flinch and then I try to play it off. <q class="junior">Oh, nothing, it’s something I found funny.</q></p>
+            <p><q class="antwon">Uh-huh. Did something go down during that Coldstone trip that you’re not telling me?</q></p>
+            <p><q class="junior">Um, n-no. Nothing really happened,</q> I say with a nervous chuckle.</p>
+            <p id="s6"><q class="antwon">Dawg, either you’re not telling me the truth or I’m missing something because I can tell whether or not you’re bullshitting.</q></p>
+            <p>He glared into my eyes for a little bit and I gave in. <q class="junior">Ugh, man, <em>fine</em>. I’ll tell you after class.</q></p>
+            <p id="f9"><q class="antwon">After class? Motherfucker, that’s in an hour.</q></p>
+            <p><q class="junior">Guess you’re gonna have to wait.</q></p>
+            <p>Antwon rolls his eyes and groans silently as he leans back in his chair.</p>
+            <p>At our school, we have a block schedule, so every class we have (except for 3rd period, we have that class every day for an hour), lasts for about 2 hours. On Wednesdays, we have all classes for 30 minutes except for the 1st period, which lasts 75 minutes.</p>
+            <div class="linebreak"></div>
+            <p>The hour passes and Antwon catches me walking down the hall during break. <q class="antwon">Hey, you didn’t explain yourself in there, I know something’s up and you ain’t telling me.</q></p>
+            <p>I let out a deep sigh and say, <q class="junior">Alright, I’ll tell you. Let’s sit down.</q></p>
+            <p>I explain to Antwon what happened last night and what’s gonna go down at prom.</p>
+            <p id="d4"><q class="antwon">Damn. That’s a lot to take in,</q> he says with a sigh.</p>
+            <p><q class="junior">Dude, you’re tellin’ me. I’ve been weaving and winding around everything that Janessa has been throwing at me. Anisa’s been helping me with it, but I feel it’s gotten to a point where I’m genuinely enjoying being with Anisa. I don’t know what it is, but I feel amazing when I’m with her.</q></p>
+            <p><q class="antwon">Dawg, you’re probably just horny. I don’t blame you either, her figure is quite nice.</q></p>
+            <p><q class="junior">Dude, hold yourself down,</q> I said with an almost threatening tone. I immediately realise what I did and so does Antwon. <q class="junior">Why did I just defend her? I wouldn’t have cared about things like that if she was just my friend.</q></p>
+            <p><q class="antwon">I think that it’s evident that you like her enough that you want to protect her, but that was a little unnecessary.</q></p>
+            <p><q class="junior">Yeah, sorry about that. But I shouldn’t contract feelings for her, we’re only friends!</q></p>
+            <p><q class="antwon">That’s what <em>you</em> think. I’m starting to think this ‘fake couple’ thing you got going on is starting to unintentionally whip up some chemistry between you two.</q></p>
+            <p><q class="junior">You could be right. I don’t want to do anything until prom though.</q></p>
+            <p id="s7"><q class="antwon">Oh shit, that’s right! I completely forgot about that!</q></p>
+            <p><q class="junior">Yeah, dude. It’s in like three days.</q></p>
+            <p id="f10"><q class="antwon">Well, I guess you’re just gonna have to work with it and not fuck it up until then.</q></p>
+            <p id="f11"><q class="junior">Yeah, because if I do fuck things up we’ll just go back to being friends or even worse, she’ll not want to talk to me at all.</q></p>
+            <p><q class="antwon">Yeah, that’s true.</q></p>
+            <p>In the corner of my eye, I see Anisa start walking over to Antwon and I with her group of friends. <q class="anisa">Hey, Junior. I thought I’d just stop by before the break bell rings,</q> Anisa says before she hugs me.</p>
+            <p><q class="junior">Anisa, this is my good mate, Antwon. Antwon, this is Anisa.</q></p>
+            <p>They both say hi and so do her friends and as the bell rings, all of our friends say bye to Anisa and I and start going their separate ways. <q class="junior">With that said, what class do you have next?</q> I ask her.</p>
+            <p><q class="anisa">You know what class I have next, dork, I have Spanish with you,</q> she replies with a chuckle.</p>
+            <p><q class="junior">Oh, right. I forgot,</q> I reply with a smile.</p>
+            <p><q class="anisa">It’s ok, now come on, we’re gonna be late,</q> she says with a smile on her face.</p>
+            <p>As we walk towards our class, I start getting that warm feeling again as we’re holding hands. We then look at each other and start smiling.</p>
+            <p>I think I'll be ok.</p>
+        </span>
+        <span id="chapter" class="c7">
+            <h1>Ch. 7 - Just 3 Days Left</h1>
+            <p>Anisa and I entered my Spanish teacher’s class. <q>Hey, Martinez,</q> we both say as we walk through the door.</p>
+            <p><q style="color:#f1e664">Hello, you two. Today we are going to have a new seating chart, but because you two have the highest scores on your tests, you guys get to choose wherever you want.</q></p>
+            <p>The freshman in the room start groaning and complaining because I get to do whatever I want in his class, so Mr. Martinez has to again state why I’m allowed to do so. <q style="color:#f1e664">The reason I’m ok with Junior and Anisa doing whatever in this class is that they know all of this Spanish already, but Junior was just moved to this class from Spanish 3 because the counsellor wanted to make it easier on him given that he has courses to make up. However, they are still required to take another Spanish class in order to graduate. He’s scoring 100% on his quizzes and tests, but because some of you like to fool around when you’re not supposed to in my class, you don’t study with the time I give you, so you end up failing the tests.</q></p>
+            <p>The freshmen then look at me standing in the back of the class with Anisa, and I just shrug with a smug look on my face. <q style="color:#f1e664">With that being said, you two, pick your spots,</q> Mr Martinez says after the freshmen look back at him. Naturally, Anisa and I sit in the back by ourselves next to each other. I pull out my Switch and start playing Smash with Anisa. <em style="color: #999;">Please don’t take that out of context.</em></p>
+            <div class="linebreak"></div>
+            <p>About 20 minutes into class, the classroom phone then starts ringing. Mr Martinez was already helping someone, so I stood up to go pick up the phone and said what all students are supposed to say when they pick up the classroom phone, <q class="junior">Mr Martinez’s class, student speaking.</q> It’s the routine at our school. The secretary at the front desk is the one on the other line and she’s informing me about something that I was not looking forward to today. I started to get quite worried and then Anisa started getting worried from me getting worried.</p>
+            <p><q class="junior">U-Understood. Bye,</q> then I hung up the phone. I go to sit back down next to Anisa and she still looks quite concerned. </p>
+            <p><q class="anisa">Hey, why do you look so worried?</q> she asks. Worryingly, of course.</p>
+            <p><q class="junior">There’s going to be a fire drill today and I am not happy about it.</q></p>
+            <p><q class="anisa">Oh. Wait, what’s so wrong with fire drills?</q> Her facial expression changes from worried to confused.</p>
+            <p id="f12"><q class="junior">I was born with high-pitch hearing sensitivity. I think it’s called ‘hyperacusis’. It’s a rare disorder that makes sounds at certain frequencies more uncomfortable and unsettling for me. In <em>my</em> case, it’s higher frequencies.</q> I then point at the fire alarms. <q class="junior">Those fuckin’ things have been the bane of my existence since kindergarten and they are the one thing I’m constantly anxious about. Hyperacusis can come in different kinds. Mine makes me annoyed, anxious, and uncomfortable from loud, high-pitched noises like those fire alarms.</q></p>
+            <p><q class="anisa">So what do you do in case there’s one scheduled?</q></p>
+            <p><q class="junior">If I know about it, I let the teachers know that I have to leave 5 minutes before they go off so I can escape to the quad and put in my headphones. Fire drills are normally set off towards the end of class so they can end as soon as lunch starts. Hey, what’s the time?</q></p>
+            <p><q class="anisa">It’s 9:40, why?</q></p>
+            <p id="f13"><q class="junior">Motherfucker, I gotta go. You wanna get out of here early?</q></p>
+            <p><q class="anisa">Eh, it gets pretty boring here without you so, let’s go.</q></p>
+            <p>I stand up and pack my things and I impatiently wait for Anisa to grab her stuff so we can leave through the door. <q class="junior">Martinez, I’m gonna go to the quad for the fire drill.</q></p>
+            <p><q style="color:#f1e664">Alright, I’ll see you on Friday.</q></p>
+            <p>I take Anisa’s hand and speedwalk out the door and straight to the quad. Anisa and I sit down and I frantically try to put my earbuds in my ears as quickly as possible. I can feel my heart pounding out of my chest. One of the outside aides walks toward us and asks why we’re outside and not in class. I explained to the aid that there was a fire drill today. He knows exactly what I have to do when there’s a fire drill planned, so he understood, walked away, and disregarded Anisa being out of class with me.</p>
+            <p id="f14">I start breathing heavily, I can’t sit still, and I’m starting to feel anxious. I fucking hate fire drills with a passion. I’d rather be in a car crash, rear-ended on my way home from Panera Bread with a perfectly good sandwich and a strawberry-banana smoothie than be right here, right now, right before a fire drill. Anisa can tell that I’m losing my mind being out here. So she puts her hand on my hand on the table and rests her head on my shoulder to try and calm me down.</p>
+            <p>Now, I have absolutely no idea how…</p>
+            <p>… but it worked.</p>
+            <p id="d5">I started calming down, I could feel my heart rate slowing down to normal levels, and I got that same damn warm feeling inside of me again. One part of my brain is trying to fight it because it’s a FIRE DRILL, but the other side of it is saying to let it go and relax, and that maybe it’s not so bad being here. I rest my head on Anisa’s head and I start to smile. I didn't even realize that the alarms were pulled, I was so lost in the moment that I didn’t care about the alarms, I had completely forgotten about the fire drill I was fighting demons over just 30 seconds ago.</p>
+            <p>The students start walking out with the teachers in an orderly fashion who have the laminated green and red papers and the students first in line have American flags. Some students looked at us with confused looks, probably wondering why we were out here before they were, but I couldn’t care less. No breeze was freezing me and no students were interrupting me. I was just enjoying the moment. The alarms were still going about over, and over, and over, and over again, and then finally, after the counsellor and principal finished checking up all classes for a green paper, the alarms stopped and the intercom was initiating an “all clear”. “Attention students, we are all clear. You may be dismissed for Lunch.” Anisa and I got up and grabbed our stuff. But before we hugged each other and headed our separate ways, I stopped her to tell her something. <q class="junior">Hey, thanks for sticking by me, those fire alarms have terrified me since kindergarten and I’ve never gotten over it. But, I wouldn’t mind the next fire drill or two,</q> I say with a chuckle.</p>
+            <p>Anisa chuckles back. <q class="anisa">It’s alright, I have a few phobias myself, I won’t judge you.</q></p>
+            <p><q class="junior">Because you’re afraid that <em>I’ll</em> judge you?</q></p>
+            <p>We start laughing and after we compose ourselves, we hug and part ways.</p>
+            <p>I begin walking toward the library to meet up with my friends. However, on my way over there, Anisa calls me on my phone. <q class="junior">Hello?</q></p>
+            <p><q class="anisa">Hey, look out behind you!</q></p>
+            <p><q class="junior">Huh? What are you talking about-</q> And before I could finish my sentence, someone pops up right behind me that I wished I wouldn’t have let pop up.</p>
+            <p><q class="janessa"><em>Hi</em>, Junior!</q></p>
+            <p>I become incredibly annoyed as I see Janessa standing right in front of me with a big, menacing smile. I can tell that the only reason why she’s here is for ill intent and ill intent only. She’s been trying to do something about Anisa since we “got together”; the reason being that she absolutely needs to get back with me. I look behind Janessa, I can see Anisa looking at me with a worried look. I close my eyes and sigh. <q class="junior">Thank you for warning me, though. I appreciate it, genuinely.</q> I smile at Anisa. She gives me a nervous smile. </p>
+            <p><q class="anisa">Sorry I let you get into that. Take care.</q></p>
+            <p><q class="junior">It’s fine, I can take care of myself. Thank you.</q> Then I hung up the call. <q class="junior">Now,</q> I say as I look back at Janessa with an annoyed look, <q class="junior">what do <em>you</em> want?</q></p>
+            <p><q class="janessa">Oh, nothing! I just wanted to say hi and let you know that voting is taking place from today until tomorrow.</q></p>
+            <p><q class="junior">Voting? For what?</q></p>
+            <p><q class="janessa">Prom, dummy!</q></p>
+            <p id="f15"><q class="junior">Okay? Fuck are you tellin’ me for?</q></p>
+            <p><q class="janessa">Oh, I also wanted to introduce you to my date.</q></p>
+            <p><q class="junior">Date? Who’d want to date <em>you</em>?</q> I got confused. She points at someone sitting on the stage in front of the gym.</p>
+            <p><q class="janessa"><em>That’s</em> him. His name is Kaleb.</q></p>
+            <p><q class="junior">Oh, I know that kid.</q></p>
+            <p><q class="janessa">Wait, you do?</q></p>
+            <p id="f16"><q class="junior">Yeah, I almost swung at him a while ago and that motherfucker still gets on my nerves. I guess that’s where you two connect.</q></p>
+            <p><q class="janessa">Ooh, that sounds like fun.</q></p>
+            <p><q class="junior">Alright, cut the act. Are you <em>trying</em> to waste my time?</q> I start to get more annoyed.</p>
+            <p>She starts to look a little nervous. <q class="janessa">Uh, n-no! I just-</q></p>
+            <p><q class="junior">Wait a minute,</q> I say as I open my phone and open an email I had missed because of the fire drill. It’s the voting form for Prom King and Queen. I start scrolling down a little and I see my name in Prom King and Anisa’s in Prom Queen. But next to my name, I see Kaleb’s name. I then scroll to Anisa’s name on the sheet. Right under her name is Janessa’s name.</p>
+            <p><q class="junior">Ok. What is your <em>real</em> intent with you standing right here?</q></p>
+            <p><q class="janessa">Well… it’s-</q></p>
+            <p id="f17"><q class="junior">You know what? Nevermind. No. Screw you. I’m not giving in, so take it. I don't need to be Prom King to prove that I’m much happier with Anisa than I was with you. If you think I’m going to give in to your bullshit shenanigans so I can get back with you, then you and Kaleb can go fuck yourselves because I’m not falling for it.</q> I then turn around and continue walking towards the library. <q class="junior">Wasting my fucking time,</q> I mumble as I’m walking away from Janessa.</p>
+            <p>I walk through the library doors and my friends immediately know something’s up because of my facial expression. <q class="juanpa">What’s with the face?</q> Juanpa asks.</p>
+            <p id="f18"><q class="junior">Fuck you mean, ‘what’s with the face?’ I just got notified that Anisa and I are on the voting list for prom and Janessa is treating it like a competition,</q> I reply with an angry tone. I set my bags down on the couch and go on my phone.</p>
+            <p><q class="bread">And Anisa knows about this?</q> Bread asks.</p>
+            <p><q class="junior">I don’t think she does, but I don't want her to fall into one of Janessa’s traps; I just want to go to prom, chill out with Anisa, drink some soda that someone will probably spike, show Janessa that I don’t want to be with her anymore, and after that, Anisa and I are going back to being friends.</q></p>
+            <p><q class="bread">You should probably tell her, you do want to prove you’re better without Janessa to try and get rid of her, right?</q></p>
+            <p><q class="junior">Yeah, you’re right about that one. I’ll explain it to her when lunch ends.</q></p>
+            <p><q class="anisa">Explain what, hun?</q> Anisa says as she’s standing right behind me.</p>
+            <p><q class="junior">Oh, hey. We’re just talking about prom.</q></p>
+            <p><q class="anisa">What about it?</q></p>
+            <p><q class="junior">The voting for the Prom King and Queen opened this morning, apparently we were put on the voting list.</q></p>
+            <p><q class="anisa">I know.</q></p>
+            <p><q class="junior">Yeah. Wait, what?</q></p>
+            <p><q class="anisa">You do want to prove to Janessa that you’re better without her to get rid of her, right?</q></p>
+            <p><q class="bread">That’s what I’m saying,</q> Bread says.</p>
+            <p id="f19"><q class="junior">Fuck up Bread, you’re not helping,</q> I say back in a jokingly manner.</p>
+            <p><q class="anisa">Junior, stand up,</q> Anisa tells me.</p>
+            <p>I stand up and she grabs me by my shirt and pulls me in. Then she gets next to my ear. <q class="anisa">I’ll be visiting you tomorrow,</q> she whispers into my ear. She lets me go and as she’s turning around, she winks at me and smiles.</p>
+            <p><q class="junior">Huh?</q> I say in a confused manner. <q class="junior">That was strange. Anyways, well, with that said, any status on your attendance at prom, gentlemen?</q></p>
+            <p><q class="bread">I’ll go, but mainly just to hang out,</q> Bread says.</p>
+            <p><q class="junior">Alright, then. Juanpa?</q></p>
+            <p><q class="juanpa">Well, turns out I'll be going with Sofie after all,</q> Juanpa replies.</p>
+            <p><q class="junior">I told you dawg, I knew she’d be up for it.</q></p>
+            <p><q class="juanpa">Yeah, whatever.</q></p>
+            <p><q class="junior">What about Arthur and Angel?</q></p>
+            <p><q class="juanpa">You know Arthur never leaves his house for anything and I already talked to Angel, he doesn’t see a point in going. I asked him about getting someone to be his date and he doesn’t believe that he’ll get one.</q></p>
+            <p><q class="junior">Man, he’s rapping malarkey. He always puts himself down like this.</q></p>
+            <p><q class="juanpa">Yeah, but you know how he is.</q></p>
+            <p><q class="junior">Indeed.</q> I then look down at the ground as I try to think of something. <q class="junior">Hold on. I got it.</q></p>
+            <p><q class="bread">Got what? An acid flashback?</q> Bread says, sarcastically.</p>
+            <p><q class="junior">No, dumbass. A plan.</q></p>
+            <p><q class="bread">And what’s that plan?</q></p>
+            <p><q class="junior">Tomorrow, we’re going to get Angel a date for prom.</q></p>
+            <p><q class="bread">Really? This is Angel we’re talking about. You know he won’t be up for it.</q></p>
+            <p><q class="junior">Which is why we’re going to devise a plan to get him up for it tonight at the meeting. For now, let’s waste time.</q> I get my drawstring bag and set it on the couch. The bag has my switch, the dock, an HDMI cable, and a power adapter. We connect it to the TV in the Library and start playing Smash on the TV. Other students start to walk in for detention or to also hang out. We start playing for a little while and I start to feel the presence of someone staring at me. I look around the library from where I’m sitting, but I don’t seem to find anyone staring at me. I then end up losing one of my stocks in the game. <q class="junior">Hey, I wasn’t paying attention.</q></p>
+            <p><q class="juanpa">Well then start paying attention, idiot,</q> Juanpa says as he starts laughing.</p>
+        </span>
+        <span id="chapter" class="c8">
+            <h1>Ch. 8 - Angel’s Date</h1>
+        </span>
+        <span id="chapter" class="c9">
+            <h1>Ch. 9 - …</h1>
+        </span>
+        <span id="chapter" class="c10">
+            <h1>Ch. 10 - Living A Dream</h1>
+        </span>
+    </main>
+    <audio id="beep" src="/API/ps2_beep.wav"></audio>
+    <audio id="select" src="/API/select.wav"></audio>
+    <audio id="zone" src="/API/zone.mp3"></audio>
+    <div class="sidebar">
+        <button class="antiexplicit">Tidy Up</button>
+        <button class="sch1">Chapter 1</button>
+        <button class="sch2">Chapter 2</button>
+        <button class="sch3">Chapter 3</button>
+        <button class="sch4" title="What was her name?">Chapter 4</button>
+        <button class="sch5">Chapter 5</button>
+        <button class="sch6">Chapter 6</button>
+        <button class="sch7">Chapter 7</button>
+        <button class="sch8">Chapter 8</button>
+        <button class="sch9">Chapter 9</button>
+        <button class="sch10">Chapter 10</button>
+    </div>
+    <div data-video="zlPQxbPoxa4" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+        <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+</body>
+</html>
