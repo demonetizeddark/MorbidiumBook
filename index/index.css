@@ -13,9 +13,58 @@ body{
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(0, 0, 0);  
 }
+
+#welcome {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome {
+    position: relative;
+    display: block;
+    top: 50%;  
+    transform: translateY(-50%);
+    transition: opacity 1s ease;
+    opacity: 0;
+  }
+  .line-1 {
+    display: none;
+  }
+}
+
+.line-1{
+  transition: opacity ease 1s;
+}
+
+#secondstage {
+  opacity: 0;
+  transition: opacity ease 1s;
+}
+
+#selection {
+  color: white;
+}
+
+#storyButton {
+  background: none;
+  border: 1px solid #df77ff;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px;
+  width: 7em;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#storyButton:hover {
+  color: #df77ff;
+  box-shadow: 0 0 5px 1px #df77ff, inset 0 0 5px 1px #a659bd;
+  transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+
 .line-1{
     position: relative;
     top: 50%;  
+    transform: translateY(-50%);    
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -23,7 +72,6 @@ body{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
 }
 
 /* Animation */
