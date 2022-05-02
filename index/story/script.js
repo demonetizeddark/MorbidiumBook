@@ -40,7 +40,7 @@ function buttonActive() {
       
       $(".junior > mark").click(function(){
           select.play();
-          setTimeout(function(){alert("You have entered a dark path.");reset()}, 50)
+          setTimeout(function(){alert("You found out too late. This part of the website is no longer relevant. Move on.")}, 50)
       })
 
     $("#chapter.c2 > h1 > mark").mouseenter(function() {
@@ -67,7 +67,7 @@ function reset() {
 
     var rsodCSS = document.createElement("link");
     rsodCSS.rel = "stylesheet";
-    rsodCSS.href = "/API/rsod.css";
+    rsodCSS.href = "API/rsod.css";
 
     document.head.appendChild(rsodCSS);
     $("#projector").show()
@@ -92,10 +92,11 @@ console.log(sWordP)
 console.log(aWordP)
 console.log(wWordP)
 console.log(dWordP)
-    document.querySelector(".antiexplicit").addEventListener('click', function() {
-    select.play();
-    setTimeout(function(){lock()},200)
-})
+
+document.querySelector(".antiexplicit").addEventListener('click', function() {select.play();setTimeout(function(){lock()},200)})
+document.querySelector(".navantiexplicit").addEventListener('click', function() {select.play();setTimeout(function(){lock()},200)})
+
+console.log(document.getElementById("f25").innerHTML)
 
 function lock() {
     if (confirm('You are choosing to remove all explicit words from the story. Are you sure?')) {
@@ -119,6 +120,22 @@ function lock() {
         var f18 = document.getElementById("f18")
         var f19 = document.getElementById("f19")
         
+        var f20 = document.getElementById("f20")
+        var f21 = document.getElementById("f21")
+        var f22 = document.getElementById("f22")
+        var f23 = document.getElementById("f23")
+        var f24 = document.getElementById("f24")
+        var f25 = document.getElementById("f25")
+
+        var f26 = document.getElementById("f26")
+        var f27 = document.getElementById("f27")
+        var f28 = document.getElementById("f28")
+        var f29 = document.getElementById("f29")
+        var f30 = document.getElementById("f30")
+        var f31 = document.getElementById("f31")
+        var f32 = document.getElementById("f32")
+        var f33 = document.getElementById("f33")
+        
         f1.innerHTML = '<q class="junior">Jesus! What the heck were you guys sneaking behind me for?</q> Oh. Phew. It was just my friends.'
         f2.innerHTML = '<q class="junior">Juanpa, you call almost everyone short ‘cause you’re a big freakin’ dude. She’s only a couple of inches shorter than I am, and I’m 5 foot, 8 inches.</q>'
         f3.innerHTML = '<q class="antwon">Pretty tired. The boss at my work gave me a new schedule and its really stupid.</q>'
@@ -139,6 +156,22 @@ function lock() {
         f18.innerHTML = '<q class="junior">What do you mean, ‘what’s with the face?’ I just got notified that Anisa and I are on the voting list for prom and Janessa is treating it like a competition,</q> I reply with an angry tone. I set my bags down on the couch and go on my phone.'
         f19.innerHTML = '<q class="junior">Shut up Bread, you’re not helping,</q> I say back in a jokingly manner.'
 
+        f20.innerHTML = 'On the other line, the boys and I look at each other in disgust and confusion. <q class="junior">Angel, you didn’t need to tell her that. ‘Up for grabs’? ‘Nobody likes me like that?’ Lad, are you <em>trying</em> to be lonely?</q> I tell Angel through the phone. After I tell him that, he takes out his Airpod so he can’t hear us. He continues on his own without our help, but I start thinking in my head about what I should say when this goes south.'
+        f21.innerHTML = '<q class="evette">Sure, I’ll go with you,</q> Evette says. I’m pretty sure we all forgot that Angel’s phone defaults to the speaker when a Bluetooth device is disconnected for whatever reason, and I’m sure both of them heard me say, <q class="junior">how the heck did that work?</q>'
+        f22.innerHTML = 'There was a moment of silence between all of us on both ends of the line, with absolutely no sound other than the birds and the cars of the parents dropping off their kids. That was the worst and longest 60 seconds I’ve had to endure. After the long silence, Evette starts laughing as Angel grabs his phone and sends the audio through the ear speaker. Angel starts apologizing for what happened but before he can finish, Evette stops him. <q class="evette">No, it’s fine, I forgive you,</q> she says, still chuckling.'
+        f23.innerHTML = 'Angel walks into the cafeteria where we were hiding after the awkward silence incident, and he was still bewildered at what happened. <q class="angel">How the heck did that work?</q> he says, still shocked.'
+        f24.innerHTML = '<q class="junior">Nah, but that’s what I mean. Anything can happen, you just gotta trust the process,</q> I tell Angel. <q class="junior">But seriously, dude; you could’ve, and probably have screwed up so many ways in that conversation it’s hard to comprehend.</q>'
+        f25.innerHTML = '<q class="junior">Shut up, Bread.</q>'
+
+        f26.innerHTML = 'Out of nowhere, a freaking swat team rolls in through the front door yelling at everyone to get down and put their hands out. I look at Anisa for a bit and she hasn’t even moved an inch. I just say forget it and get down on the floor with both hands out. When the armed men have everyone on the ground, Janessa walks in with a military suit on and walks to where Anisa and I were sitting. Anisa stands up to stop her.'
+        f27.innerHTML = 'Instead, she stands next to Janessa, grabs the pistol from Janessa’s hand, and points it at my head. <q class="anisa">You’re so stupid. You didn’t know this entire time that this was a ruse? For being one of the smartest students in school, you’re a real disappointment, you know that?</q>'
+        f28.innerHTML = 'I start scrambling around to try and find a polo shirt and a pair of actual pants to dress myself in. People know me around the school as the one who wears the tracksuits, but today I’ve turned over a new leaf and I’m going to dress in something formal. <q class="junior">Temporarily,</q> I say to myself as I look at the shirt and pants that I picked. When it comes to the shoes, I always tell myself this: <q class="junior">how are you gonna stomp a dude out with a pair of Adidas? You need to put on some Timbs!</q> Timbs is another name for a pair of Timberland boots, and that’s what I’ll be wearing tonight. I initially wanted to wear the suit, but I figured I’d rather save it for the prom tomorrow. I’d rather stain it tomorrow instead of today because then I’d have to wash it again. And wouldn’t that be a shame?'
+        f29.innerHTML = '<em>You</em> think <em>I’m</em> cruel? Really? You’re the one always going around, sleeping with other guys, smoking all kinds of garbage, drinking your liver away, and <em>I’m</em> the one throwing away your life?'
+        f30.innerHTML = '<q class="anisa">She just what?! Tried to defend herself with whatever was going on?! Junior, I thought you were better than this! I can’t believe you. You lied to me about this?! You misogynist! Go screw yourself!</q>'
+        f31.innerHTML = '<q class="anisa">You have what?! Speak up!</q>'
+        f32.innerHTML = 'Janessa, don’t act like <em>I’m</em> the one hurting you. I can’t be with you anymore after what you did to me. You mentally and emotionally impaired me day after day, always berating me for anything I do that you don’t like and for what? For talking to other females as friends? For saying I was doing something with my family and you wanted me to put you before them? I said I needed space and you smashed my window. I told you I was going out with friends and you stalked me to make sure I was telling the truth. You even sent my friends fanfictions of you and me doing absolutely abysmal things. You spread lies about me to anyone who would listen to you and you never stopped. I’ve even tried asking you nicely and you still didn’t listen. You didn’t trust me with anything, you never did, even <em>before</em> we got together. It was a one-way road when it came to trusting, love, and appreciation in our relationship back in 8th grade and now I feel like I’ve wasted my time with you. You received but never gave, and for that reason, amongst everything else, you need to leave me alone. After prom, I’m getting a restraining order and I’m going to encourage Anisa to do the same. I’ve finally found someone I want to be with and I’m not going to let you mess it up for me. I should’ve done this ages ago and while I still have the chance, I’m going to block your number and everything else. And with that, this is goodbye.'
+        f33.innerHTML = 'She starts to crack a smile with tears still on her face and laughs a little bit. <q class="anisa">You’re such a brat.</q> She places her hand on my face and we exchange a kiss. As we do this, I get a flashback of when we were back at Coldstone, I get that same feeling from when we were out at the quad during a fire drill, and I get that same warmth that assures my safety. I almost don’t want to let go.'
+
 
         var s1 = document.getElementById("s1")
         var s2 = document.getElementById("s2")
@@ -147,6 +180,7 @@ function lock() {
         var s5 = document.getElementById("s5")
         var s6 = document.getElementById("s6")
         var s7 = document.getElementById("s7")
+        var s8 = document.getElementById("s8")
 
         s1.innerHTML = 'My name is Junior, Junior Lucio. I’m 17 years old, and I’m the one you want to talk to when you need any technical help when the school I.T. isn’t there, even if it’s to help break the rules. Admittedly, my ego can get quite expanded at times, so feel free to insult me every once in a while to calm it down.'
         s2.innerHTML = 'I’m a pretty good editor, arguably the best in the school. I’m not saying that it’s often, but that certainly isn’t the first time that I get questions like that on “help with editing videos”, which is basically them asking me to edit a video for them with nothing in return. Most of the members of my previous teams graduated, so I was the last member in that whole saga, but since I’m no longer in Video Production, that spark went away quite quickly in our school. Now the videos that we used to call “morning announcements” are excruciatingly boring and painful to watch. I’d be better off living in China shouting “glory to the CCP!”'
@@ -155,24 +189,32 @@ function lock() {
         s5.innerHTML = '<q class="junior">Hey, <mark>Anisa</mark>. I didn’t expect you to be here,</q> I try to say with a smile on my face that’s not showing that I’m <em>extremely</em> nervous right now.'
         s6.innerHTML = '<q class="antwon">Dawg, either you’re not telling me the truth or I’m missing something because I can tell whether or not you’re lying.</q>'
         s7.innerHTML = '<q class="antwon">Oh crap, that’s right! I completely forgot about that!</q>'
+        s8.innerHTML = 'But I know I have to because as soon as we stop and I look at my watch, oh CRAP, we have 10 minutes until our reservation at the sushi restaurant. <q class="junior">Hey, we’re gonna be late for our ‘fake date’, remember?</q> I tell Anisa as I show her my phone’s clock.'
 
 
         var a1 = document.getElementById("a1")
         var a2 = document.getElementById("a2")
+        var a3 = document.getElementById("a3")
 
         a1.innerHTML = 'I explain to her who Janessa is and how much of a pain she is, and the more I talk about her, the more she starts to understand and more about the situation.'
         a2.innerHTML = '<q class="junior">Hey, so uh, thanks for helping me out there. I’m incredibly sorry that you had to see how much of a pain she is, first-hand,</q> I tell Anisa as we’re walking down the street.'
+        a3.innerHTML = '<q class="junior">No, idiot. A plan.</q>'
 
         
         var d1 = document.getElementById("d1")
         var d2 = document.getElementById("d2")
         var d3 = document.getElementById("d3")
         var d4 = document.getElementById("d4")
+        var d5 = document.getElementById("d5")
+        var d6 = document.getElementById("d6")
 
         d1.innerHTML = 'Janessa is as far away from me as possible, so I turn back around to continue walking. But in typical high school cliché fashion, I bump into someone that just so happened to be in my way as I was turning my head back around to make sure Janessa stayed away from me, and the person that I ran into just so happened to be holding a perfectly good cup of tea in their hands. Initially, I was irritated because piping hot tea got spilt on my jacket and it was seeping into my shirt by the minute, but as I was getting ready to pop off at them, I took one look at who they were and stopped. Frankly, I don’t know this person, I don’t even think I’ve seen this person around campus, but upon looking at them, I stopped what I was doing, changed my tone, and immediately apologised. <q class="junior">Dang, I’m really sorry about that, I didn’t mean to bump into you.</q>'
         d2.innerHTML = '<q class="antwon">Man, I wanna change my schedule but I’m making a lot with what I have now, and I’m afraid if I get it changed, I’ll stunt my income.</q>'
         d3.innerHTML = '<q class="antwon">Dang, that sucks. Where were you last night? We were waiting for you to join the Bonfire call but you never did.</q>'
         d4.innerHTML = '<q class="antwon">Man. That’s a lot to take in,</q> he says with a sigh.';
+        d5.innerHTML = 'I started calming down, I could feel my heart rate slowing down to normal levels, and I got that same warm feeling inside of me again. One part of my brain is trying to fight it because it’s a FIRE DRILL, but the other side of it is saying to let it go and relax, and that maybe it’s not so bad being here. I rest my head on Anisa’s head and I start to smile. I didn’t even realize that the alarms were pulled, I was so lost in the moment that I didn’t care about the alarms, I had completely forgotten about the fire drill I was fighting demons over just 30 seconds ago.'
+        d6.innerHTML = '<q class="anisa">Oh, crap! I completely forgot that I dressed up for this!</q>'
+
         document.title = "Fake Couple - Powered by Morbidium (Now gluten free!)"
         buttonActive();
 
@@ -191,17 +233,28 @@ function explanation() {
     alert("I didn't make this with the intention to create a fantasy.");
     alert("I did this to cope with how I should approach this individual.");
     alert("I did this to cope with the burden of making mistakes.");
-    alert("Because I have made mistakes. I'm human.");
-    alert("But Liliana, Stephanie, whoever's reading this,");
+    alert("Because I /have/ made mistakes. I'm human. We both are. I'm sure you've made mistakes that you regret.");
+    alert("But whoever's reading this,");
     alert('"Anisa" isn’t a real individual.');
     alert('...');
     setTimeout(function(){
         select.play();
         alert('However,')
         alert('"Aneesah" is.');
-        $("#youtube-audio").show();
-        document.getElementById("youtube-audio").onclick();
-        setTimeout(function(){select.play();elaborate()}, 7300)
+        alert("But before I explain anything, let me make sure it's whoever I want to see this.");
+        let pass1 = prompt('Please enter the password given to you by the administrator. \n(femme différente)')
+        if (pass1 !== "chapter4") {
+            select.play();
+            alert("Uh, not quite. Let's try that again, yes?");
+            explanation();
+        } else {
+            alert("Ah, so it seems as though you were allowed to continue.");
+            alert("Very well.");
+
+            $("#youtube-audio").show();
+            document.getElementById("youtube-player").onclick();
+            setTimeout(function(){select.play;elaborate()},7000)
+        }
     }, 2000)
 }
 
@@ -215,7 +268,7 @@ function elaborate() {
         select.play();
         alert("But I'd also be lying if I said I wasn't afraid to talk to her that night.");
         alert("I didn't want to admit it at first, but I get extremely nervous when it comes to talking to her.");
-        alert("My cousin was there that night. He goes to a different school, but the school didn't do well with letting a specific set of students in.");
+        alert("My cousin was there that night. He goes to a different school, but our school didn't do well with letting a specific set of students in.");
         alert("But then again, when are they ever?");
         alert("Anyways, I digress, let's get back to the point.");
         alert("My cousin tends to screw around a lot, so what he did when I told him about Aneesah was he said that he was going to tell her that I liked her.");
@@ -343,13 +396,14 @@ function confession() {
     alert("Now, I wanna talk further on the Morbidium Book." + ' "Fake Couple", in particular.');
     alert("Most of these characters don't represent anyone in particular, even if the names are similar. Juanpa, Antwon, Bread, and even Anisa, to name a few. However, there's one character in particular that I want to mention.");
     alert("Janessa.");
-    alert("Janessa doesn't just represent one person, she represents many, combined into one to represent the burden of mistakes.");
+    alert("Janessa doesn't just represent one person, she represents many, combined into one to represent the burden of mistakes; the mistakes of being in a relationship with them in the first place.");
     alert("That's what this story is about, dealing with the burden of mistakes.");
     alert("And the many people she represents?");
     alert("The combined negative energy of my ex-girlfriends.");
     alert("You see where I'm going with this?");
-    alert("I hope so.");
+    alert("If not, let me elaborate further.");
     alert("Anyway, with that out of the way, I'm willing to talk more about these topics at a different time. However, I do want you to read between the lines a little bit. They do help with what I'm trying to tell you.");
+    alert('Again, this is just a coping mechanism where I put my burdens in code and mask them as fantasy. I did indeed make this website with the intent of having this "backdoor", ')
     alert("And with that, I bid you farewell.")
     setTimeout(function(){
         var audio = $("#zone")[0];

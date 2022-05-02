@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url("API/SF-Pro-Text-Regular.otf");
 
 html {
     height: 100%;
@@ -34,6 +36,7 @@ h1 {
     text-align: center;
     font-size: 72px;
 }
+
 p {
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -150,6 +153,32 @@ p {
     }
 }
 
+#leftside > p, #rightside > p {
+    font-family: 'SF Pro', monospace;
+}
+
+#leftside.janessa {
+    background-color: coral;
+    border-radius: 20px 20px 20px 0px;
+}
+
+#leftside > .janessa {
+    color: white;
+    padding: 10px 15px;
+    text-indent: 0;
+}
+
+#rightside.junior {
+    background-color: #7289da;
+    border-radius: 20px 20px 0px 20px;
+}
+
+#rightside > .junior {
+    color: white;
+    padding: 10px 15px;
+    text-indent: 0;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         display: initial;
@@ -203,29 +232,55 @@ p {
     border-radius: 100%;
 }
 
+.song, .artist {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.song:visited {
+    color: inherit;
+}
+
+.song:hover, .artist:hover {
+    color: #1db954;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #1db954;
+    transition: 0.2s ease;
+}
+
 .janessa {
-    color: coral;
+    color: #ff7f50;
 }
 .junior {
     color: #7289da;
 }
 .anisa {
-    color: #df77ff
+    color: #df77ff;
 }
 .juanpa {
     color: #2681f2;
 }
 .bread {
-    color: rgb(131, 255, 216)
+    color: #83ffd8;
 }
 .antwon {
-    color: rgb(244, 78, 78)
+    color: #f44e4e;
 }
 .mum {
-    color: salmon;
+    color: #fa8072;
 }
 .alex {
-    color: rgb(111, 96, 208);
+    color: #6f60d0;
+}
+.sofie {
+    color: #fe00ff;
+}
+.angel {
+    color: #1db920;
+}
+.evette {
+    color: #ba37e1;
 }
 
 p, html {
