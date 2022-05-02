@@ -40,7 +40,7 @@ function buttonActive() {
       
       $(".junior > mark").click(function(){
           select.play();
-          setTimeout(function(){alert("You found out too late. This part of the website is no longer relevant. Move on.")}, 50)
+          setTimeout(function(){alert('You found out too late. This part of the website is no longer relevant. The only thing you need to know is that Anisa isn’t the person you know. But rather, a representation of relief. An escape. If you really want to know what was behind this door, figure out another way to enter. But for now, good day.')}, 50)
       })
 
     $("#chapter.c2 > h1 > mark").mouseenter(function() {
